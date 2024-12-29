@@ -35,11 +35,14 @@
 
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact">
+                <form name="contact" method="POST" data-netlify="true">
+                    <!-- Hidden Bot Field for Spam Prevention (only one should exist) -->
                     <p class="hidden">
-                        <label>Don't fi;; this out if you're human: <input name="bot-field"></label>
+                        <label>
+                            Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
                     </p>
+            
                     <div class="form-control">
                         <input type="text" name="name" placeholder="name" required>
                     </div>
@@ -52,8 +55,7 @@
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
             </div>
-        </div>
-    </section>
+            
 
     <!----- Stats -->
     <section class="stats">
